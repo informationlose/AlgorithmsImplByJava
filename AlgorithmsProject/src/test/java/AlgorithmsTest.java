@@ -2,8 +2,8 @@ import cn.Algorithms.Tools.AlgorithmsException;
 import cn.Algorithms.Tools.SortTemplate;
 import cn.AlgorithmsImpl.Max_Heapify.MaxHeapify;
 import cn.AlgorithmsImpl.Queue.ArrayQueue;
-import cn.AlgorithmsImpl.SortAlgorithms.InsertSort;
 import cn.AlgorithmsImpl.SortAlgorithms.QuickSort;
+import cn.AlgorithmsImpl.SortAlgorithms.ShellSort;
 import cn.AlgorithmsImpl.Stack.ArrayStack;
 import org.junit.jupiter.api.Test;
 
@@ -58,13 +58,44 @@ public class AlgorithmsTest {
         }
     }
 
+    /**
+     * 排序算法
+     * 可用性测试
+     */
     @Test
-    public void testSort() {
-        SortTemplate sortTemplate = new InsertSort();
-//        String[] data = {"b","d","d","a","c"};
-        Integer[] data = {23, 2, 1, 3, 5, 1, 2, 5};
-        sortTemplate.sort(data);
+    public void testSortUserful() {
+        SortTemplate sortTemplate = new ShellSort();
+        Integer[] data = new Integer[40];
+        for (int i = 0; i < 40; i++) {
+            data[i] = (int) (Math.random() * 1000);
+        }
+        System.out.println("待排序数据：");
         sortTemplate.show(data);
+        sortTemplate.sort(data);
+        System.out.println("排序完成数据：" + sortTemplate.isSorted(data));
+        sortTemplate.show(data);
+    }
+
+    /**
+     * 排序算法
+     * 性能测试
+     */
+    @Test
+    public void testSortTime() {
+        SortTemplate sortTemplate = new ShellSort();
+        Integer[] data = new Integer[10000];
+        long times = 0;
+        for (int i = 0; i < 10000; i++) {
+            for (int j = 0; j < 10000; j++) {
+                data[j] = (int) (Math.random() * 100000);
+            }
+            long begin = System.currentTimeMillis();
+            sortTemplate.sort(data);
+            long end = System.currentTimeMillis();
+            times = times + (end - begin);
+        }
+        String[] name = sortTemplate.getClass().getName().split("\\.");
+        System.out.println(name[3] + "算法执行10000次所用时间：" + times);
     }
 }
 
