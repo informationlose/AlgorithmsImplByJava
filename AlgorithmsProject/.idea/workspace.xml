@@ -2,22 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a8d7910-5a71-4b08-ab8f-52354504d25b" name="默认" comment="开始使用模板的方法进行Sort算法实现，不再是《算法导论》，而是《算法》中的内容了。">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/Algorithms/Tools/SortTemplate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/AlgorithmsImpl/SortAlgorithms/InsertSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/AlgorithmsImpl/SortAlgorithms/SelectionSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AlgorithmsProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmsProject.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AlgorithmsTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cn/Algorithms/Tools/AlgorithmsException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cn/AlgorithmsImpl/Max_Heapify/MaxHeapify.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cn/AlgorithmsImpl/Queue/ArrayQueue.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cn/AlgorithmsImpl/SortAlgorithms/QuickSort.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cn/AlgorithmsImpl/Stack/ArrayStack.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/AlgorithmsImpl/SortAlgorithms/InsertSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/AlgorithmsImpl/SortAlgorithms/InsertSort.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -66,17 +51,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/AlgorithmsTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="393">
-              <caret line="65" column="44" lean-forward="true" selection-start-line="65" selection-start-column="44" selection-end-line="65" selection-end-column="44" />
+            <state relative-caret-position="418">
+              <caret line="66" column="32" lean-forward="true" selection-start-line="66" selection-start-column="32" selection-end-line="66" selection-end-column="32" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/cn/Algorithms/Tools/SortTemplate.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="149">
-              <caret line="27" column="27" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
+            <state relative-caret-position="374">
+              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
               <folding>
                 <element signature="e#295#296#0" expanded="true" />
                 <element signature="e#336#337#0" expanded="true" />
@@ -85,11 +70,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/cn/AlgorithmsImpl/SortAlgorithms/InsertSort.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="248">
-              <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+            <state relative-caret-position="253">
+              <caret line="21" column="75" selection-start-line="21" selection-start-column="75" selection-end-line="21" selection-end-column="75" />
             </state>
           </provider>
         </entry>
@@ -149,9 +134,9 @@
         <option value="$PROJECT_DIR$/src/main/java/cn/AlgorithmsImpl/Template.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/Algorithms/Tools/Template.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/AlgorithmsImpl/SortAlgorithms/SelectionSort.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/Algorithms/Tools/SortTemplate.java" />
         <option value="$PROJECT_DIR$/src/test/java/AlgorithmsTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/AlgorithmsImpl/SortAlgorithms/InsertSort.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/Algorithms/Tools/SortTemplate.java" />
       </list>
     </option>
   </component>
@@ -417,17 +402,19 @@
       <workItem from="1561038308945" duration="300000" />
       <workItem from="1561166562719" duration="2139000" />
       <workItem from="1561187873848" duration="4511000" />
-      <workItem from="1561256142018" duration="5371000" />
+      <workItem from="1561256142018" duration="5907000" />
     </task>
+    <task id="LOCAL-00001" summary="开始使用模板的方法进行Sort算法实现，不再是《算法导论》，而是《算法》中的内容了。">
+      <created>1561261551825</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1561261551825</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AlgorithmsTest_testSort - 2019.06.23 at 11h 33m 26s.xml">
-      <configuration name="AlgorithmsTest.testSort" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="AlgorithmsTest_testSort - 2019.06.23 at 11h 34m 01s.xml">
-      <configuration name="AlgorithmsTest.testSort" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="AlgorithmsTest_testSort - 2019.06.23 at 11h 34m 14s.xml">
       <configuration name="AlgorithmsTest.testSort" configurationId="JUnit" />
     </history-entry>
@@ -452,9 +439,15 @@
     <history-entry file="AlgorithmsTest_testSort - 2019.06.23 at 11h 39m 34s.xml">
       <configuration name="AlgorithmsTest.testSort" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="AlgorithmsTest_testSort - 2019.06.23 at 11h 52m 51s.xml">
+      <configuration name="AlgorithmsTest.testSort" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AlgorithmsTest_testSort - 2019.06.23 at 11h 53m 44s.xml">
+      <configuration name="AlgorithmsTest.testSort" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65926000" />
+    <option name="totallyTimeSpent" value="66462000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -469,8 +462,8 @@
     <frame x="65" y="-7" width="1478" height="878" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.48502994" visible="true" weight="0.32605633" />
-      <window_info id="Structure" order="1" sideWeight="0.51497006" side_tool="true" visible="true" weight="0.32605633" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.48399246" visible="true" weight="0.32605633" />
+      <window_info id="Structure" order="1" sideWeight="0.51600754" side_tool="true" visible="true" weight="0.32605633" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -478,12 +471,12 @@
       <window_info id="设计器" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32841823" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.28820375" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.28820375" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32931727" />
-      <window_info active="true" anchor="bottom" id="Messages" order="7" visible="true" weight="0.32841823" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.32841823" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.3297587" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.3297587" />
@@ -847,28 +840,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/Algorithms/Tools/SortTemplate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <element signature="e#295#296#0" expanded="true" />
+            <element signature="e#336#337#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/AlgorithmsTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
-          <caret line="65" column="44" lean-forward="true" selection-start-line="65" selection-start-column="44" selection-end-line="65" selection-end-column="44" />
+        <state relative-caret-position="418">
+          <caret line="66" column="32" lean-forward="true" selection-start-line="66" selection-start-column="32" selection-end-line="66" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cn/AlgorithmsImpl/SortAlgorithms/InsertSort.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/Algorithms/Tools/SortTemplate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="27" column="27" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
-          <folding>
-            <element signature="e#295#296#0" expanded="true" />
-            <element signature="e#336#337#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="253">
+          <caret line="21" column="75" selection-start-line="21" selection-start-column="75" selection-end-line="21" selection-end-column="75" />
         </state>
       </provider>
     </entry>
