@@ -4,7 +4,9 @@ import cn.Algorithms.Tools.SortTemplate;
 
 /**
  * 插入排序：把排序集合分成两组，一组存放排序好的，另一组是原始的，每次排序把原始的一张放在排序好的中。
- *      优点：语句少
+ *      优点：语句少，可以自动识别出已经排序好了的数组，降低无效输出。
+ *      缺点：每次插入都需要移动多个元素才能成功。
+ *      时间复杂度：O(N*N)
  */
 public class InsertSort extends SortTemplate {
     public void sort(Comparable[] comparables) {
