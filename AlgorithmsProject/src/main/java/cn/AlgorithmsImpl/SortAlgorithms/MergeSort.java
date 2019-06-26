@@ -17,9 +17,16 @@ public class MergeSort extends SortTemplate {
         //普通归并，需要消耗比较大的空间
 //        Comparable[] result = merge(comparables, 0, comparables.length, comparables.length);
 //        System.arraycopy(result, 0, comparables, 0, result.length);
-        //原地归并,适配器隐藏参数的设定
+        //原地归并,自顶向下
+//        aux = new Comparable[comparables.length];
+//        sort(comparables, 0, comparables.length - 1);
+        //原地归并，自底向上
         aux = new Comparable[comparables.length];
-        sort(comparables, 0, comparables.length - 1);
+        for (int i = 1; i < comparables.length; i = 2 * i) {
+            for (int j = 0; j < comparables.length - i; j += 2 * i) {
+                merge(comparables, j, j + i - 1, Math.min(j + 2 * i - 1, comparables.length - 1));
+            }
+        }
     }
 
     //普通归并所用的函数
@@ -47,8 +54,7 @@ public class MergeSort extends SortTemplate {
 //        }
 //        return result;
 //    }
-
-    //递归用函数，分组
+    //递归用函数，分组,自顶向下归并
     private void sort(Comparable[] comparables, int begin, int end) {
         if (begin >= end) return;
         int mid = begin + (end - begin) / 2;
