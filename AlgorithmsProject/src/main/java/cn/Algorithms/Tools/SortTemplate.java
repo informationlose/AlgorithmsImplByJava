@@ -30,7 +30,7 @@ public abstract class SortTemplate {
 
     //查看数据是否按从小到大的顺序排列好
     public boolean isSorted(Comparable[] comparables) {
-        for (int i = 1; i < comparables.length - 1; i++) {
+        for (int i = 1; i < comparables.length; i++) {
             if (less(comparables[i], comparables[i - 1])) return false;
         }
         return true;
