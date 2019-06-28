@@ -13,15 +13,9 @@ public class MaxHeapify<Key extends Comparable<Key>> {
         data = (Key[]) new Comparable[Max + 1];
     }
 
-    public void showData() {
-        for (int i = 0; i < N; i++) {
-            System.out.print(data[i + 1] + " ");
-        }
-    }
-
     //比较
     private boolean less(int i, int j) {
-        return data[i].compareTo(data[j]) < 0;
+        return data[i].compareTo(data[j]) > 0;
     }
 
     //交换
