@@ -4,6 +4,7 @@ package cn.AlgorithmsImpl.Max_Heapify;
  * 最大堆的实现：使用数组作为实现的载体
  * 注意，最大堆的性质只是父结点大于子节点而已！！在数组中不一定是从大到小的排列的！！！！
  * 如果想要从大到小或从小到大排序，只能不断的抽取首个元素，直到数组消失
+ * 优先队列的实现可以使得我们在需要某些最大值或最小值的时候无需比对所有的数据，从而快速完成筛选
  */
 public class MaxHeapify<Key extends Comparable<Key>> {
     private Key[] data;

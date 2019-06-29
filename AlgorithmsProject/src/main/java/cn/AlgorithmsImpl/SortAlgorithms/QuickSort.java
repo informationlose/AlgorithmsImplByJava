@@ -8,6 +8,9 @@ import java.util.Random;
  * 快速排序：使用数组实现，始终把最后一位放在数组中使得前面比他小，后面比他大。
  * 使用一个循环不断扩大大于他的区域，
  * 在循环中，如果出现了比他小的，则扩大一下比他小的区域并和当前的区域（比他大的区域的最外层）交换
+ * 1.39NlogN
+ * 三项切分的快速排序可以针对有大量的重复值出现的数组排序：
+ * 三项切分直接把递归的选项跨过了相同的数据，减少了不必要的交换
  */
 public class QuickSort extends SortTemplate {
     @Override
@@ -37,6 +40,7 @@ public class QuickSort extends SortTemplate {
         exch(comparables, begin, j);
         return j;
     }
+
     //以前的实现
 //    private static int[] array;
 //    private static int last;
@@ -70,4 +74,18 @@ public class QuickSort extends SortTemplate {
 //            sort(Array, temp + 1, end);
 //        }
 //    }
+    //找出数据中排序好的第K个元素
+    public Comparable select(Comparable[] comparables, int k) {
+        Random random = new Random();
+        int i = random.nextInt(comparables.length - 1);
+        exch(comparables, 0, i);
+        int begin = 0, end = comparables.length - 1, j;
+        while (begin <= end) {
+            j = partition(comparables, begin, end);
+            if (j == k) return comparables[k];
+            else if (j > k) end = j - 1;
+            else begin = j + 1;
+        }
+        return comparables[k];
+    }
 }
