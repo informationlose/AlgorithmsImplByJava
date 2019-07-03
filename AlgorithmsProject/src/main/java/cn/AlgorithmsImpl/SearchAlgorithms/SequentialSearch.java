@@ -1,4 +1,6 @@
-package cn.AlgorithmsImpl.FindAlgorithms;
+package cn.AlgorithmsImpl.SearchAlgorithms;
+
+import java.util.LinkedList;
 
 public class SequentialSearch<Key extends Comparable, Value> {
     private Node first;
@@ -36,6 +38,27 @@ public class SequentialSearch<Key extends Comparable, Value> {
             if (key.equals(i.key)) return i.value;
         }
         return null;
+    }
+
+    public void delete(Key key) {
+        if (first.key == key) first = first.next;
+        Node i = first;
+        for (i = first; i.next != null; i = i.next) {
+            if (i.next.key == key) {
+                i.next = i.next.next;
+                size--;
+                return;
+            }
+        }
+    }
+
+    public Iterable keys() {
+        LinkedList<Key> result = new LinkedList<>();
+        if (first != null)
+            for (Node i = first; i != null; i = i.next) {
+                result.add(i.key);
+            }
+        return result;
     }
 
     private class Node {
